@@ -1,0 +1,7 @@
+{
+  "name": "moim-record",
+  "version": "1.0.0",
+  "private": true,
+  "description": "활동 사진 정리와 서기 보고를 위한 브라우저 로컬 웹사이트",
+  "scripts": { "start": "node server.cjs", "test": "node --test tests/domain.test.cjs", "check": "node --check app.js && node --check domain.js && node --check server.cjs" }
+}

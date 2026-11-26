@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0F766E">
+  <meta name="description" content="활동의 순간을 모아, 총회 보고를 간편하게. 브라우저에 저장하는 우리 모임의 활동 기록.">
+  <title>모임기록 — 활동의 순간을 모아</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="domain.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="site-header no-print">
+    <div class="header-inner">
+      <a class="brand" href="#list" aria-label="모임기록 홈"><span class="brand-icon" aria-hidden="true">▣</span>모임기록</a>
+      <nav aria-label="주 메뉴"><a href="#list" id="nav-list">활동 기록</a><a href="#report" id="nav-report">서기 보고</a></nav>
+      <span class="local-label">이 브라우저에 저장</span>
+    </div>
+  </header>
+  <main id="app" tabindex="-1"><div class="empty"><p>기록을 불러오는 중입니다…</p></div></main>
+  <footer class="site-footer no-print"><span class="footer-mark" aria-hidden="true">▣</span><p>기록은 이 브라우저에 저장됩니다. 다른 기기와 자동으로 동기화되지 않으며,<br class="desktop-break"> 브라우저 데이터 삭제 시 사라질 수 있습니다.</p><span>모임의 순간을, 오래 기억하도록.</span></footer>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <dialog id="confirm-dialog" aria-labelledby="confirm-title"><div class="dialog-body"><h2 id="confirm-title">삭제 확인</h2><p id="confirm-message"></p><div class="actions"><button type="button" id="confirm-cancel" class="button secondary">취소</button><button type="button" id="confirm-ok" class="button danger">삭제</button></div></div></dialog>
+  <dialog id="lightbox" aria-label="사진 확대"><button type="button" class="button secondary lightbox-close">닫기 <span aria-hidden="true">×</span></button><img alt=""><p></p></dialog>
+  <noscript>모임기록을 사용하려면 브라우저의 JavaScript를 켜 주세요.</noscript>
+</body>
+</html>
